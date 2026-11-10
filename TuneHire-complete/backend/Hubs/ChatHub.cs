@@ -1,0 +1,1 @@
+using Microsoft.AspNetCore.SignalR; using System.Threading.Tasks; namespace TuneHire.Api.Hubs { public class ChatHub : Hub { public async Task SendToGroup(string group, string user, string message) { await Clients.Group(group).SendAsync("ReceiveGroup", user, message); } public override Task OnConnectedAsync() { return base.OnConnectedAsync(); } } }

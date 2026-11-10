@@ -1,0 +1,1 @@
+using Microsoft.AspNetCore.Mvc; namespace TuneHire.Api.Controllers { [ApiController] [Route("api/[controller]")] public class PaymentsController : ControllerBase { [HttpPost("charge")] public IActionResult Charge([FromBody] object payload) { return Ok(new { success = true, transactionId = System.Guid.NewGuid() }); } } }

@@ -1,0 +1,2 @@
+using System.ComponentModel.DataAnnotations;
+namespace TuneHire.Api.Models { public class User { public int Id { get; set; } [Required] public string Email { get; set; } [Required] public string PasswordHash { get; set; } public string Role { get; set; } public string DisplayName { get; set; } public System.DateTime CreatedAt { get; set; } = System.DateTime.UtcNow; } }

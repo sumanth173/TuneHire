@@ -1,0 +1,1 @@
+namespace TuneHire.Api.Models { public class Review { public int Id { get; set; } public int BookingId { get; set; } public int Rating { get; set; } public string Comment { get; set; } public System.DateTime CreatedAt { get; set; } = System.DateTime.UtcNow; } }

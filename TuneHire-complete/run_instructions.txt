@@ -1,0 +1,23 @@
+## Quick run (Windows / Dev machine)
+
+### Prereqs
+- Node.js 18+ and npm
+- Angular CLI v19 (optional): npm i -g @angular/cli@19
+- .NET 7+ or 8+ SDK installed
+- SQL Server (Developer) + SSMS
+
+### Backend
+1. Open `backend/` in terminal.
+2. Update `appsettings.json` connection string to your SQL Server.
+3. dotnet restore
+4. dotnet build
+5. Run EF migrations or execute `sql/create_tunehire_db.sql` in SSMS.
+6. dotnet run
+API will run at https://localhost:5001 by default (Kestrel dev certificate may be used).
+
+### Frontend
+1. Open `frontend/` in terminal.
+2. npm install
+3. ng serve
+Open http://localhost:4200
+
